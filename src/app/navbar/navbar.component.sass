@@ -1,0 +1,42 @@
+$asideBg: #32383E
+$activeLink: #1895E0
+$link: #B1B5B9
+$logoBg: #22272A
+.aside
+    width: 200px
+    background-color: $asideBg
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    &__logo
+        text-align: center
+        padding: 20px 0
+        background-color: $logoBg
+        color: #fff
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 50px
+
+
+.menu
+    &__link
+        display: block
+        padding: 15px 0 15px 30px
+        color: $link
+        transition: all .3s
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 0
+            height: 100%
+            background-color: $activeLink
+            transition: all .3s
+        &:hover
+            color: $activeLink
+            &:before
+                width: 4px
+            

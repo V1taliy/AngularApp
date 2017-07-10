@@ -1,0 +1,7 @@
+<div class="note_editor">
+  <textarea #newNoteText rows="5" type="text" class="note_editor__ta" placeholder="Заметка..."></textarea>
+  <div class="note_editor__footer">
+    <color-editor (choosingColor)="chooseColor( $event )" [color]="defaultColor"></color-editor>
+    <button class="note_editor__add_btn" (click)="addNote( newNoteText )" >Add note</button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<h2 *ngIf="!posts">LOADING.</h2>
+<div *ngIf="posts">
+  <post *ngFor="let post of posts" [post]="post"></post>
+</div>

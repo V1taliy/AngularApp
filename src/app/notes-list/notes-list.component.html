@@ -1,0 +1,7 @@
+<div class="notes">
+  <div class="note {{note.color}}" *ngFor="let note of notes; let i = index">
+    {{note.text}} <br>
+    <button (click)="removeNote(i)">Remove</button>
+    <color-editor (choosingColor)="changeColor( i, $event )" [color]="note.color"></color-editor>
+  </div>
+</div>
